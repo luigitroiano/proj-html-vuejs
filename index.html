@@ -12,12 +12,36 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b1c0bf61f1.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap"
+      rel="stylesheet">
   </head>
   <body>
     <div id="root">
       <!-- header -->
       <header>
         <!-- navbar -->
+        <div class="nav bg_navbar txt_color">
+          <div id="navbar" class="container d_flex justif_between align_center txt_size_13">
+            <div id="nav_left">
+              <i class="fas fa-clock"></i>
+              <span>Open Hours: {{opening}}</span>
+            </div>
+            <div id="nav_right" class="d_flex align_center">
+              <i class="fas fa-phone-alt"></i>
+              <span>{{phoneNumb}}</span>
+              <i class="fas fa-envelope"></i>
+              <span>{{email}}</span>
+              <div class="socials d_flex align_center">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- /navbar -->
         <!-- jumbotron -->
         <!-- /jumbotron -->
