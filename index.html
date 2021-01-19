@@ -23,7 +23,7 @@
       <!-- header -->
       <header>
         <!-- navbar -->
-        <div class="nav bg_navbar txt_color">
+        <div class="nav bg_navbar txt_color_white">
           <div id="navbar" class="container d_flex justif_between align_center txt_size_13">
             <div id="nav_left">
               <i class="fas fa-clock"></i>
@@ -44,6 +44,23 @@
         </div>
         <!-- /navbar -->
         <!-- jumbotron -->
+        <div class="jumbo txt_color_white">
+          <div id="jumbo_navbar" class="container d_flex justif_between align_center">
+            <div id="jumbo_nav_left">
+              <div class="logo d_flex">
+                <div>NEX</div>
+                <div>GEN</div>
+              </div>
+            </div>
+            <div id="jumbo_nav_right">
+              <ul class="d_inline_flex">
+                <li class="menu_jumbo" v-for="menu in menuJumbotron">{{menu}}</li>
+              </ul>
+              <i class="far fa-user"></i>
+              <button>GET IN TOUCH</button>
+            </div>
+          </div>
+        </div>
         <!-- /jumbotron -->
       </header>
       <!-- main -->

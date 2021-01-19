@@ -6,10 +6,17 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+li{
+  list-style: none;
+}
+/* //////////////////////////////////////////// */
 /* color */
 .bg_navbar{
   background-color: #21343E;
 }
+.clr_dark_aquamarine{
+  color: #028384; /*button*/ 
+} 
 /* /color */
 /* ///////////////////////////////////////////// */
 /* utility class */
@@ -19,13 +26,16 @@ body{
 .d_flex{
   display: flex;
 }
+.d_inline_flex{
+  display: inline-flex;
+}
 .justif_between{
   justify-content: space-between;
 }
 .align_center{
   align-items: center;
 }
-.txt_color{
+.txt_color_white{
   color: white;
 }
 .txt_size_13{
@@ -62,4 +72,39 @@ body{
   font-size: 25px;
 }
 /* /navbar */
+/* jumbotron */
+.jumbo{
+  width: 100%;
+  height: 600px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/img/bg-9.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#jumbo_navbar{
+  padding: 20px 0px;
+}
+.logo div{
+  letter-spacing: 4px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.logo div:first-child{
+  background-color: #02838480;
+  border-top-left-radius: 15.5px;
+  border-bottom-left-radius: 15.5px;
+  color: #52bbbb;
+}
+.menu_jumbo, #jumbo_nav_right i, #jumbo_nav_right button{
+  margin-left: 25px;
+}
+#jumbo_nav_right button{
+  background-color: #028384;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 130px;
+}
+/* /jumbotron */
 /* /header */
