@@ -17,6 +17,12 @@ li{
 .clr_dark_aquamarine{
   color: #028384; /*button*/ 
 } 
+.clr_txt_grey{
+  color: #BCBDBD;
+}
+.clr_txt_acquamarine{
+  color: #16928e;
+}
 /* /color */
 /* ///////////////////////////////////////////// */
 /* utility class */
@@ -40,6 +46,9 @@ li{
 }
 .txt_size_13{
   font-size: 13px;
+}
+.fw_500{
+  font-weight: 500;
 }
 /* /utility class */
 /* ///////////////////////////////////////////// */
@@ -80,6 +89,7 @@ li{
   background-size:cover;
   background-repeat: no-repeat;
 }
+/* navbar jumbotron */
 #jumbo_navbar{
   padding: 20px 0px;
 }
@@ -90,6 +100,7 @@ li{
   align-items: center;
 }
 .logo div:first-child{
+  padding-left: 20px;
   background-color: #02838480;
   border-top-left-radius: 15.5px;
   border-bottom-left-radius: 15.5px;
@@ -98,13 +109,47 @@ li{
 .menu_jumbo, #jumbo_nav_right i, #jumbo_nav_right button{
   margin-left: 25px;
 }
-#jumbo_nav_right button{
+.btn_in_touch {
   background-color: #028384;
   color: white;
   border: none;
   border-radius: 5px;
   height: 35px;
   width: 130px;
+  font-weight: 600;
 }
+.btn_in_touch:hover{
+  background-color: white;
+  color: #028384;
+  cursor: pointer;
+}
+/* /navbar jumbotron */
+/* main jumbotron */
+#main_jumbo{
+  width: 30%;
+  margin-top: 128.5px;
+}
+#main_jumbo h1{
+  font-size: 50px;
+  font-weight: 900;
+  margin: 10px 0 25px 0;
+}
+#main_jumbo p{
+  margin-bottom: 25px;
+}
+.btn_read_more{
+  background-color: transparent;
+  color: white;
+  border: 1px solid #028384;
+  border-radius: 5px;
+  height: 35px;
+  width: 130px;
+  font-weight: 600;
+}
+.btn_read_more:hover{
+  border: 1px solid white;
+  cursor: pointer;
+}
+/* /main jumbotron */
 /* /jumbotron */
 /* /header */
