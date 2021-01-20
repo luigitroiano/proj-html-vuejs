@@ -1,10 +1,12 @@
 let app = new Vue({
   el: "#root",
   data: {
+    // DATA info generali azienda
     opening: "Mon - Sat - 9:00-18:00",
     phoneNumb: "+1 (305) 1234-5678",
     email: "hello@example.com",
     address: "Main Avenue, 987",
+    // DATA link menu header
     menuJumbotron: [
       {
         name: "HOME",
@@ -27,6 +29,12 @@ let app = new Vue({
         url: "#",
       },
     ],
+    // data per form
+    errorsForm: [],
+    nameForm: null,
+    emailForm: null,
+    moreInfoForm: "",
+    // DATA link menu footer
     footerLink: [
       {
         label: "About",
@@ -110,6 +118,7 @@ let app = new Vue({
         }],
       },
     ],
+    // DATA info generali footer
     lowerFooter: {
       alertPiracy: "Enjoy the low price. We are tracking any intention of piracy",
       copyright: "NEXGEN is Proudly Powered By ",
@@ -120,8 +129,32 @@ let app = new Vue({
     }
   },
   methods: {
+    // funzione per validazione form
+    checkForm: function (e) {
+      this.errorsForm = [];
+
+      if (!this.nameForm) {
+        this.errorsForm.push("Name required.");
+      }
+      if (!this.emailForm) {
+        this.errorsForm.push('Email required.');
+      } else if (!this.validEmail(this.emailForm)) {
+        this.errorsForm.push('Valid email required.');
+      }
+
+      if (!this.errorsForm.length) {
+        return true;
+      }
+
+      e.preventDefault();
+    },
+    validEmail: function (email) {
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    },
+    // funzione per determinare anno corrente, usata nel footer
     getCurrentYear() {
       return new Date().getFullYear();
-    }
+    },
   },
 });

@@ -13,7 +13,7 @@ a{
   text-decoration: none;
 }
 /* //////////////////////////////////////////// */
-/* color */
+/* colors */
 .bg_navbar{
   background-color: #21343E;
 }
@@ -22,6 +22,9 @@ a{
 }
 .bg_black{
   background-color: black; /*bg lower footer*/
+}
+.bg_white{
+  background-color: white; /*bg section FORM, PROCEDURE...*/
 }
 .clr_dark_aquamarine{
   color: #028384; /*button*/ 
@@ -35,7 +38,7 @@ a{
 .txt_color_white{
   color: white;
 }
-/* /color */
+/* /colors */
 /* ///////////////////////////////////////////// */
 /* utility class */
 .container{
@@ -64,10 +67,10 @@ a{
 }
 /* /utility class */
 /* ///////////////////////////////////////////// */
-/* header */
+/* --------header--------- */
 /* navbar top */
 .nav{
-  width: 100%;
+  width: 100vw;
   height: 40px;
 }
 #navbar{
@@ -95,11 +98,12 @@ a{
 /* /navbar top*/
 /* jumbotron */
 .jumbo{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../assets/img/bg-9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 /* navbar jumbotron */
 #jumbo_navbar{
@@ -139,6 +143,8 @@ a{
 }
 /* main jumbotron */
 #main_jumbo{
+  position: absolute;
+  top: 0;
   width: 30%;
   height: 100%;
 }
@@ -166,9 +172,16 @@ a{
 /* /main jumbotron */
 /* /jumbotron */
 
+/* --------main--------- */
 
 
-/* footer */
+/* section FORM */
+#section_form{
+  width: 100vw;
+  height: 100vh;
+}
+/* /section FORM */
+/* -------footer--------*/
 #footer{
   width: 100vw;
   height: 80vh;
@@ -220,7 +233,7 @@ a{
 /* lower footer */
 #lower_footer{
   width: 100vw;
-  height: 13vh !important; 
+  height: 10vh !important; 
 }
 #lower_footer > div{
   height: 100%; 

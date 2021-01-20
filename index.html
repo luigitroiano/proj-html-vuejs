@@ -20,7 +20,7 @@
   </head>
   <body>
     <div id="root">
-      <!-- header -->
+      <!-- ------header----- -->
       <header>
         <!-- navbar -->
         <div class="nav bg_navbar txt_color_white">
@@ -74,11 +74,69 @@
         </div>
         <!-- /jumbotron -->
       </header>
-      <!-- main -->
+      <!-- -----main----- -->
       <main>
-
+        <!-- section FORM -->
+        <section>
+          <div id="section_form" class="bg_white">
+            <div class="container d_flex justif_between align_center">
+              <div id="form">
+                <span>SEND A MESSAGE</span>
+                <h2>Get in <span>Touch</span></h2>
+                <p>We will respond to your message as soon as possible.</p>
+                <!-- ----MODULO FORM---- -->
+                <form @submit="checkForm" action="#" method="post" novalidate="true">
+                  <p v-if="errorsForm.length">
+                    <b>Please correct the following error(s):</b>
+                  <ul>
+                    <li v-for="error in errorsForm">{{ error }}</li>
+                  </ul>
+                  </p>
+                  <div>
+                    <input id="name" v-model="nameForm" type="text" name="name" placeholder="Name">
+                    
+                    <input id="email" v-model="emailForm" type="email" name="email" placeholder="Email">
+                  </div>
+                  <div>
+                    <input type="tel" id="phone" name="phone" minlength="9" placeholder="Phone" required>
+                    <select id="info_form" v-model="moreInfoForm" name="info_form">
+                      <option value="" disabled selected hidden>How can we help you?</option>
+                      <option>More info</option>
+                      <option>More info 2</option>
+                      <option>More info 3</option>
+                    </select>
+                  </div>
+                  <div>
+                    <textarea placeholder="Message"></textarea>
+                  </div>
+                  <input type="submit" value="SEND"></input>
+                </form>
+              </div>
+              <div id="form_info">
+                <h3>Example Inc.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>Dignissimos fugiat expedita cupiditate vel obcaecati eius, voluptates in placeat.</p>
+                <ul class="clr_txt_grey">
+                  <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>{{phoneNumb}}</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>{{email}}</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>{{address}}</span>
+                  </li>
+                </ul>
+                <button class="btn_empty clr_txt_grey">VIEW MAP</button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <!-- footer -->
+      <!-- -----footer----- -->
       <footer>
         <div id="footer" class="bg_dark_blue">
           <div class="container d_flex align_center">
