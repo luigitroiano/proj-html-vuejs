@@ -35,8 +35,11 @@ a{
 .clr_txt_grey{
   color: #BCBDBD !important;
 }
+.clr_txt_darkgrey{
+  color: #69696d !important;
+}
 .clr_txt_acquamarine{
-  color: #16928e;
+  color: #16928e !important;
 }
 .txt_color_white{
   color: white;
@@ -62,11 +65,17 @@ a{
 .txt_size_13{
   font-size: 13px;
 }
+.txt_size_42{
+  font-size: 42px;
+}
 .fw_500{
   font-weight: 500;
 }
 .mg_l_25{
   margin-left: 20px;
+}
+.pd_l_2{
+  padding-left: 2px;
 }
 /* /utility class */
 /* ///////////////////////////////////////////// */
@@ -186,12 +195,74 @@ a{
 #section_form > div{
   height: 100%;
 }
+/* FORM CARD LEFT */
 #form{
   width: 100%;
   height: 70%;
+  padding-top: 30px;
 }
+#form > span, #form > h2,
+#form > p{
+  display: block;
+  margin-bottom: 20px;
+}
+#form input, #form textarea, #form select{
+  border: none;
+  background-color: #74370e24;
+  height: 40px;
+  width: 250px;
+  padding: 0 10px;
+  outline: none;
+  margin: 0 5px 10px 0;
+}
+#form textarea{
+  min-width: 510px;
+  min-height: 100px;
+  padding: 10px;
+}
+#form form{
+  margin-top: 40px;
+}
+#form button:hover{
+  border: 1px solid #028384;
+
+}
+/* FORM CARD RIGHT */
 #form_info{
   height: 70%;
+  padding-top: 30px;
+}
+#form_info > h3, #form_info > p{
+  display: block;
+  margin-bottom: 23px;
+}
+#form_info i{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#form_info .icona{
+  display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-color: #16928e26;
+    border-radius: 50%;
+}
+#form_info li{
+  margin: 10px 0;
+}
+#form_info ul li > span{
+  vertical-align: super;
+  padding-left: 8px;
+}
+#form_info button:hover{
+  border: none;
+  background-color: #16928e;
+  color: white !important;
 }
 /* /section FORM */
 /* -------footer--------*/

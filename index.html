@@ -82,8 +82,8 @@
             <div class="container d_flex justif_between align_center">
               <div id="form">
                 <span class="clr_txt_acquamarine"><strong>SEND A MESSAGE</strong></span>
-                <h2>Get in <span class="clr_txt_acquamarine bg_aquamire_semi_transparent">Touch</span></h2>
-                <p>We will respond to your message as soon as possible.</p>
+                <h2 class="txt_size_42">Get in <span class="clr_txt_acquamarine bg_aquamire_semi_transparent">Touch</span></h2>
+                <p class="clr_txt_darkgrey">We will respond to your message as soon as possible.</p>
                 <!-- ----MODULO FORM---- -->
                 <form @submit="checkForm" action="#" method="post" novalidate="true">
                   <p v-if="errorsForm.length">
@@ -99,7 +99,7 @@
                   </div>
                   <div>
                     <input type="tel" id="phone" name="phone" minlength="9" placeholder="Phone" required>
-                    <select id="info_form" v-model="moreInfoForm" name="info_form">
+                    <select id="info_form" class="clr_txt_darkgrey" v-model="moreInfoForm" name="info_form">
                       <option value="" disabled selected hidden>How can we help you?</option>
                       <option>More info</option>
                       <option>More info 2</option>
@@ -109,28 +109,34 @@
                   <div>
                     <textarea placeholder="Message"></textarea>
                   </div>
-                  <input type="submit" value="SEND"></input>
+                  <button class="btn_full" type="submit">SEND</button>
                 </form>
               </div>
               <div id="form_info">
                 <h3>Example Inc.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <p>Dignissimos fugiat expedita cupiditate vel obcaecati eius, voluptates in placeat.</p>
-                <ul class="clr_txt_grey">
+                <p class="clr_txt_darkgrey">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="clr_txt_darkgrey">Dignissimos fugiat expedita cupiditate vel obcaecati eius, voluptates in placeat.</p>
+                <ul class="clr_txt_acquamarine">
                   <li>
-                    <i class="fas fa-phone-alt"></i>
+                    <div class="icona">
+                      <i class="fas fa-phone-alt clr_txt_acquamarine"></i>
+                    </div>
                     <span>{{phoneNumb}}</span>
                   </li>
                   <li>
-                    <i class="fas fa-envelope"></i>
+                    <div class="icona">
+                      <i class="fas fa-envelope clr_txt_acquamarine"></i>
+                    </div>
                     <span>{{email}}</span>
                   </li>
                   <li>
-                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="icona">
+                      <i class="fas fa-map-marker-alt clr_txt_acquamarine pd_l_2"></i>
+                    </div>
                     <span>{{address}}</span>
                   </li>
                 </ul>
-                <button class="btn_empty clr_txt_grey">VIEW MAP</button>
+                <button class="btn_empty clr_txt_acquamarine">VIEW MAP</button>
               </div>
             </div>
           </div>
