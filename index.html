@@ -47,9 +47,10 @@
         <div class="jumbo txt_color_white">
           <div id="jumbo_navbar" class="container d_flex justif_between align_center">
             <div id="jumbo_nav_left">
+              <!-- -----LOGO NEXGEN -------->
               <div class="logo d_flex">
                 <div>NEX</div>
-                <div>GEN</div>
+                <div class="txt_color_white">GEN</div>
               </div>
             </div>
             <div id="jumbo_nav_right">
@@ -79,6 +80,40 @@
       </main>
       <!-- footer -->
       <footer>
+        <div id="footer" class="bg_dark_blue">
+          <div class="container d_flex align_center">
+            <div id="footer_info">
+              <div class="logo d_flex">
+                <div>NEX</div>
+                <div class="clr_txt_grey">GEN</div>
+              </div>
+              <p class="clr_txt_grey">A Functional HTML Template for Corporate & Business.</p>
+              <ul class="clr_txt_grey">
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <span>{{phoneNumb}}</span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <span>{{email}}</span>
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>{{address}}</span>
+                </li>
+              </ul>
+              <button class="btn_empty clr_txt_grey">GET IN TOUCH</button>
+            </div>
+            <div id="footer_card" v-for="(card,index) in footerLink">
+              <h3 class="txt_color_white">{{card.label}}</h3>
+              <ul class="clr_txt_grey">
+                <li><a v-for="(link,index) in card.downMenu" :href=`${link.url}`><i class="fas fa-chevron-right"></i>{{link.name}}</a></li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
 
       </footer>
     </div>

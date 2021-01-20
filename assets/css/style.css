@@ -17,14 +17,20 @@ a{
 .bg_navbar{
   background-color: #21343E;
 }
+.bg_dark_blue{
+  background-color: #121117; /*bg footer,services...*/
+}
 .clr_dark_aquamarine{
   color: #028384; /*button*/ 
 } 
 .clr_txt_grey{
-  color: #BCBDBD;
+  color: #BCBDBD !important;
 }
 .clr_txt_acquamarine{
   color: #16928e;
+}
+.txt_color_white{
+  color: white;
 }
 /* /color */
 /* ///////////////////////////////////////////// */
@@ -44,9 +50,6 @@ a{
 .align_center{
   align-items: center;
 }
-.txt_color_white{
-  color: white;
-}
 .txt_size_13{
   font-size: 13px;
 }
@@ -59,7 +62,7 @@ a{
 /* /utility class */
 /* ///////////////////////////////////////////// */
 /* header */
-/* navbar */
+/* navbar top */
 .nav{
   width: 100%;
   height: 40px;
@@ -86,7 +89,7 @@ a{
 #nav_right a:hover i{
   font-size: 25px;
 }
-/* /navbar */
+/* /navbar top*/
 /* jumbotron */
 .jumbo{
   width: 100%;
@@ -115,6 +118,8 @@ a{
 .menu_jumbo, #jumbo_nav_right i, #jumbo_nav_right button{
   margin-left: 25px;
 }
+/* /navbar jumbotron */
+/* /header */
 .btn_full {
   background-color: #028384;
   color: white;
@@ -129,7 +134,6 @@ a{
   color: #028384;
   cursor: pointer;
 }
-/* /navbar jumbotron */
 /* main jumbotron */
 #main_jumbo{
   width: 30%;
@@ -158,4 +162,35 @@ a{
 }
 /* /main jumbotron */
 /* /jumbotron */
-/* /header */
+
+
+
+/* footer */
+#footer{
+  width: 100vw;
+  height: 80vh;
+}
+#footer > div{
+  height: 100%;
+}
+#footer_info{
+  width: calc(100%/4);
+  padding-right: 22px;
+}
+#footer_info .logo{
+  font-size: x-large;
+}
+#footer_info p{
+  margin: 20px 0;
+}
+#footer_info li{
+  margin-bottom: 12px;
+}
+#footer_info i{
+  width: 16px;
+  margin-right: 5px;
+}
+#footer_info button{
+  margin-top: 10px;
+}
+/* /footer */
