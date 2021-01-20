@@ -110,8 +110,18 @@ let app = new Vue({
         }],
       },
     ],
+    lowerFooter: {
+      alertPiracy: "Enjoy the low price. We are tracking any intention of piracy",
+      copyright: "NEXGEN is Proudly Powered By ",
+      copyrightLink: {
+        name: "Codings",
+        url: "#",
+      }
+    }
   },
   methods: {
-
+    getCurrentYear() {
+      return new Date().getFullYear();
+    }
   },
 });

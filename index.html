@@ -106,15 +106,22 @@
             </div>
             <div id="footer_card" v-for="(card,index) in footerLink">
               <h3 class="txt_color_white">{{card.label}}</h3>
-              <ul class="clr_txt_grey">
-                <li><a v-for="(link,index) in card.downMenu" :href=`${link.url}`><i class="fas fa-chevron-right"></i>{{link.name}}</a></li>
+              <ul>
+                <li v-for="(link,index) in card.downMenu"><a :href=`${link.url}` class="clr_txt_grey"><i class="fas fa-chevron-right"></i>{{link.name}}</a></li>
               </ul>
-
             </div>
-
+          </div>
+          <div id="lower_footer" class="bg_black clr_txt_grey txt_size_13">
+            <div class="container d_flex justif_between align_center">
+              <div>
+                <p>{{lowerFooter.alertPiracy}}</p>
+              </div>
+              <div>
+                <p><i class="far fa-copyright"></i> {{getCurrentYear()}} {{lowerFooter.copyright}} <a :href=`${lowerFooter.copyrightLink.url}`>{{lowerFooter.copyrightLink.name}}</a></p>
+              </div>
+            </div>
           </div>
         </div>
-
       </footer>
     </div>
     <script src="./assets/js/main.js"></script>

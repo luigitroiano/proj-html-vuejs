@@ -20,6 +20,9 @@ a{
 .bg_dark_blue{
   background-color: #121117; /*bg footer,services...*/
 }
+.bg_black{
+  background-color: black; /*bg lower footer*/
+}
 .clr_dark_aquamarine{
   color: #028384; /*button*/ 
 } 
@@ -173,9 +176,11 @@ a{
 #footer > div{
   height: 100%;
 }
-#footer_info{
+/* footer info card */
+#footer_info, #footer_card{
   width: calc(100%/4);
   padding-right: 22px;
+  height: 251px;
 }
 #footer_info .logo{
   font-size: x-large;
@@ -192,5 +197,38 @@ a{
 }
 #footer_info button{
   margin-top: 10px;
+}
+/* footer cards */
+#footer_card{
+  background-color: #191c1e;
+  padding: 35px 30px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+#footer_card h3{
+  margin-bottom: 15px;
+}
+#footer_card li{
+  margin-bottom: 7px;
+}
+#footer_card a:hover{
+  color: #028384 !important;
+}
+#footer_card i{
+  margin-right: 10px;
+}
+/* lower footer */
+#lower_footer{
+  width: 100vw;
+  height: 13vh !important; 
+}
+#lower_footer > div{
+  height: 100%; 
+}
+#lower_footer a{
+  color: #028384; 
+}
+#lower_footer a:hover{
+  color: white; 
 }
 /* /footer */
