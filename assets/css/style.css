@@ -26,6 +26,9 @@ a{
 .bg_white{
   background-color: white; /*bg section FORM, PROCEDURE...*/
 }
+.bg_aquamire_semi_transparent{
+  background-color: #16928e26;
+}
 .clr_dark_aquamarine{
   color: #028384; /*button*/ 
 } 
@@ -179,6 +182,16 @@ a{
 #section_form{
   width: 100vw;
   height: 100vh;
+}
+#section_form > div{
+  height: 100%;
+}
+#form{
+  width: 100%;
+  height: 70%;
+}
+#form_info{
+  height: 70%;
 }
 /* /section FORM */
 /* -------footer--------*/
