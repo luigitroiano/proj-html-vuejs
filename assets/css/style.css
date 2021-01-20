@@ -68,6 +68,9 @@ a{
 .txt_size_42{
   font-size: 42px;
 }
+.txt_size_38{
+  font-size: 38px;
+}
 .fw_500{
   font-weight: 500;
 }
@@ -185,8 +188,71 @@ a{
 /* /jumbotron */
 
 /* --------main--------- */
-
-
+/* section ABOUT */
+#section_about{
+  width: 100vw;
+  height: 100vh;
+}
+#section_about > div{
+  height: 100%;
+}
+/* ABOUT LEFT */
+#about_left{
+  width: 70%;
+  height: 70%;
+  padding-right: 50px;
+}
+#about_left > span, #about_left > h2,
+#about_left > p{
+  display: block;
+  margin-bottom: 20px;
+}
+#about_left > div{
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #e2e2e9;
+}
+#about_left ul{
+  margin-left: 18px;
+}
+#about_left li{
+  list-style: disc;
+}
+/* ABOUT RIGHT */
+.certificate img{
+  width: 100px;
+}
+#about_right{
+  height: 70%;
+  width: 25%;
+}
+#about_right .vehicle{
+  padding: 10px 0;
+}
+#about_right .border{
+  border-bottom: 1px solid rgba(169, 169, 169, 0.625);
+  border-top: 1px solid rgba(169, 169, 169, 0.625);
+}
+#about_right > h3{
+  display: block;
+  margin-bottom: 23px;
+}
+#about_right .truck{
+  padding: 5px;
+  background-color: #5296bb25;
+  margin-right: 5px;
+}
+#about_right .truck_info{
+  margin-left: 20px;
+}
+#about_right .certifications{
+  margin: 30px 0;
+}
+#about_right .certificate img{
+  margin: 20px 20px 0 0;
+}
+/* /section ABOUT */
+/* ////////////////////////////////////////////////////////////////////////////// */
 /* section FORM */
 #section_form{
   width: 100vw;
