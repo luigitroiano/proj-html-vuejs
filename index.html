@@ -54,19 +54,21 @@
             </div>
             <div id="jumbo_nav_right">
               <ul class="d_inline_flex">
-                <li class="menu_jumbo" v-for="menu in menuJumbotron">{{menu}}</li>
+                <li class="menu_jumbo" ><a class="menu_jumbo txt_color_white" v-for="(menu,index) in menuJumbotron" :href=`${menu.url}`>{{menu.name}}</a></li>
               </ul>
-              <i class="far fa-user"></i>
-              <button class="btn_in_touch">GET IN TOUCH</button>
+              <a href="#"><i class="far fa-user txt_color_white"></i></a>
+              <button class="btn_full">GET IN TOUCH</button>
             </div>
           </div>
-          <div id="main_jumbo" class="container">
-            <span class="clr_txt_acquamarine fw_500">LOGISTICS SERVICES</span>
-            <h1>CARGO TRANSPORT</h1>
-            <p class="clr_txt_grey">Fractional or exclusive road cargo transportation to all regions with small, medium and large vehicles.</p>
-            <button class="btn_in_touch">GET IN TOUCH</button>
-            <button class="btn_read_more">READ MORE</button>
-
+          <div id="main_jumbo" class="container d_flex align_center">
+            <div>
+              <span class="clr_txt_acquamarine fw_500">LOGISTICS SERVICES</span>
+              <h1>CARGO TRANSPORT</h1>
+              <p class="clr_txt_grey">Fractional or exclusive road cargo transportation to all regions with small, medium and large
+                vehicles.</p>
+              <button class="btn_full">GET IN TOUCH</button>
+              <button class="btn_empty mg_l_25">READ MORE</button>
+            </div>
           </div>
         </div>
         <!-- /jumbotron -->
