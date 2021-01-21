@@ -11,6 +11,7 @@ li{
 }
 a{
   text-decoration: none;
+  color: inherit;
 }
 /* //////////////////////////////////////////// */
 /* colors */
@@ -107,6 +108,9 @@ a{
 .socials a{
   vertical-align: middle;
 }
+#nav_right .fas{
+  margin-right: 8px;
+}
 #nav_right a > i{
   transition-property: font-size;
 }
@@ -143,11 +147,17 @@ a{
 .menu_jumbo, #jumbo_nav_right i, #jumbo_nav_right button{
   margin-left: 25px;
 }
+#jumbo_nav_right{
+  z-index: 10;
+}
+#jumbo_nav_right li a:hover, #jumbo_nav_right i.far:hover{
+  color: #01c7c7;
+}
 /* /navbar jumbotron */
 /* /header */
 .btn_full {
   background-color: #028384;
-  color: white;
+  color: white !important;
   border: none;
   border-radius: 5px;
   height: 35px;
@@ -156,7 +166,7 @@ a{
 }
 .btn_full:hover{
   background-color: white;
-  color: #028384;
+  color: #028384 !important;
   cursor: pointer;
 }
 /* main jumbotron */
@@ -314,6 +324,52 @@ a{
 }
 /* /section SERVICES */
 /* ////////////////////////////////////////////////////////////////////////////// */
+/* section PROCESS */
+#section_process{
+  background-color: #EEF4ED;
+  width: 100vw;
+  height: 80vh;
+}
+#section_process > div{
+  height: 100%;
+  padding: 5% 0;
+}
+/* PROCESS INCIPIT */
+#process_incipit{
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.7;
+  padding: 0 150px;
+}
+/* PROCESS STAGE */
+#process_stage > div > div:nth-child(1){
+  background-color: #16928e26;
+  color: #028384;
+  margin: 0px 82px 20px 82px;
+  border-radius: 50%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+#process_stage > div > span:nth-child(2){
+  width: 200px;
+  height: 38px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  color: black;
+  padding: 0 28px;
+  margin-bottom: 20px;
+}
+#process_stage > div > span:nth-child(3){
+  width: 200px;
+  display: block;
+  font-size: small;
+  text-align: center;
+  color: #69696d;
+}
+/* /section PROCESS */
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
 /* section RESULTS */
 #section_results{
   background-image: url("../../assets/img/bg-10.jpg");
@@ -520,6 +576,7 @@ a{
 #lower_footer{
   width: 100vw;
   height: 10vh !important; 
+  position: relative;
 }
 #lower_footer > div{
   height: 100%; 
@@ -529,5 +586,26 @@ a{
 }
 #lower_footer a:hover{
   color: white; 
+}
+#btn_back_top{
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+}
+.btn_back_top{
+  background-color: #4d515369;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: relative;
+}
+.btn_back_top i{
+  color: white;
+  font-size: larger;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* /footer */

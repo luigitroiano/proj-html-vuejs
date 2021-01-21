@@ -58,7 +58,7 @@
                 <li class="menu_jumbo" ><a class="menu_jumbo txt_color_white" v-for="(menu,index) in menuJumbotron" :href=`${menu.url}`>{{menu.name}}</a></li>
               </ul>
               <a href="#"><i class="far fa-user txt_color_white"></i></a>
-              <button class="btn_full">GET IN TOUCH</button>
+              <button class="btn_full"><a href="#section_form">GET IN TOUCH</a></button>
             </div>
           </div>
           <div id="main_jumbo" class="container d_flex align_center">
@@ -67,8 +67,8 @@
               <h1>CARGO TRANSPORT</h1>
               <p class="clr_txt_grey">Fractional or exclusive road cargo transportation to all regions with small, medium and large
                 vehicles.</p>
-              <button class="btn_full">GET IN TOUCH</button>
-              <button class="btn_empty mg_l_25">READ MORE</button>
+              <button class="btn_full"><a href="#section_form">GET IN TOUCH</a></button>
+              <button class="btn_empty mg_l_25"><a href="#section_about">READ MORE</a></button>
             </div>
           </div>
         </div>
@@ -212,6 +212,53 @@
             </div>
           </div>
         </section>
+        <!-- section PROCESS -->
+        <section>
+          <div id="section_process">
+            <div class="container">
+              <!-- PROCESS INCIPIT -->
+              <div id="process_incipit">
+                <span class="clr_txt_acquamarine"><strong>HOW IT WORKS IN PRACTICE</strong></span>
+                <h2 class="txt_size_38">
+                  <span class="clr_txt_acquamarine bg_aquamire_semi_transparent">
+                    Logistical
+                  </span>
+                  Procedure
+                </h2>
+                <p class="clr_txt_darkgrey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquid perspiciatis cumque. Odit, ut. Optio natus eligendi amet aspernatur odio.</p>
+              </div>
+              <!-- PROCESS STAGE -->
+              <div id="process_stage" class="d_flex txt_color_white">
+                <div>
+                  <div>01</div>
+                  <span>Collection of information</span>
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div>
+                  <div>02</div>
+                  <span>Service invoice Sending</span>
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div>
+                  <div>03</div>
+                  <span>Withdrawal of Cargo</span>
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div>
+                  <div>04</div>
+                  <span>Transport Customer Order</span>
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div>
+                  <div>05</div>
+                  <span>Successful Delivery</span>
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- section RESULTS -->
         <section>
           <div id="section_results">
@@ -394,7 +441,7 @@
                   <span>{{address}}</span>
                 </li>
               </ul>
-              <button class="btn_empty clr_txt_grey">GET IN TOUCH</button>
+              <button class="btn_empty clr_txt_grey"><a href="#section_form">GET IN TOUCH</a></button>
             </div>
             <div id="footer_card" v-for="(card,index) in footerLink">
               <h3 class="txt_color_white">{{card.label}}</h3>
@@ -403,6 +450,7 @@
               </ul>
             </div>
           </div>
+          <!-- LOWER FOOTER -->
           <div id="lower_footer" class="bg_black clr_txt_grey txt_size_13">
             <div class="container d_flex justif_between align_center">
               <div>
@@ -412,6 +460,11 @@
                 <p><i class="far fa-copyright"></i> {{getCurrentYear()}} {{lowerFooter.copyright}} <a :href=`${lowerFooter.copyrightLink.url}`>{{lowerFooter.copyrightLink.name}}</a></p>
               </div>
             </div>
+            <a id="btn_back_top" href="#">
+              <div class="btn_back_top">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </a>
           </div>
         </div>
       </footer>

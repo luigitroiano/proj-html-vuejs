@@ -14,19 +14,19 @@ let app = new Vue({
       },
       {
         name: "ABOUT",
-        url: "#",
+        url: "#section_about",
       },
       {
         name: "SERVICES",
-        url: "#",
+        url: "#section_services",
       },
       {
         name: "PROCESS",
-        url: "#",
+        url: "#section_process",
       },
       {
         name: "TESTIMONIALS",
-        url: "#",
+        url: "#section_feedback",
       },
     ],
     // data per form
