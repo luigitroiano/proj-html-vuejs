@@ -289,7 +289,7 @@ a{
 }
 .services_card_container > a > i{
   position: absolute;
-  top: 40px;
+  top: 30px;
   right: 35px;
   font-size: 20px;
   color: #16928ebb;
@@ -314,6 +314,50 @@ a{
 }
 /* /section SERVICES */
 /* ////////////////////////////////////////////////////////////////////////////// */
+/* section FEEDBACK */
+#section_feedback{
+  width: 100vw;
+  height: 95vh;
+  padding-top: 20px;
+}
+#section_feedback > div{
+  height: 40%;
+}
+/* FEEDBACK INCIPIT */
+#feedback_incipit{
+  padding-top: 75px;
+  height: 100%;
+  text-align: center;
+}
+#feedback_incipit h2{
+  padding: 20px 0;
+}
+/* FEEDBACK CARD */
+.feedback_card_container{
+  position: relative;
+  width: calc(100%/3);
+  padding: 30px 35px;
+  border-radius: 10px;
+}
+#section_feedback > div:nth-child(2) > div:nth-child(2){
+  margin: 0 20px;
+}
+.feedback_card_container > i{
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+  font-size: 20px;
+  color: rgb(85, 85, 85);
+}
+.feedback_card_container img{
+  width: 100px;
+  filter: brightness(0) invert(1);
+}
+.feedback_card_container p{
+  margin: 15px 0 20px 0;
+}
+/* /section SERVICES */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
 /* section FORM */
 #section_form{
   width: 100vw;
