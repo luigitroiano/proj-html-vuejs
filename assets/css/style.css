@@ -314,6 +314,37 @@ a{
 }
 /* /section SERVICES */
 /* ////////////////////////////////////////////////////////////////////////////// */
+/* section RESULTS */
+#section_results{
+  background-image: url("../../assets/img/bg-10.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 70vh;
+}
+#section_results > div{
+  height: 100%;
+  padding: 9% 0;
+}
+/* RESULTS INCIPIT */
+#results_incipit{
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.7;
+}
+/* RESULTS DATA */
+#results_data > div > span:nth-child(1){
+  font-weight: 700;
+  font-size: xx-large;
+  display: block;
+  text-align: center;
+}
+#results_data > div > span:nth-child(2){
+  font-weight: 700;
+  font-size: larger;
+}
+/* /section RESULTS */
+/* ////////////////////////////////////////////////////////////////////////////// */
 /* section FEEDBACK */
 #section_feedback{
   width: 100vw;
