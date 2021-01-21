@@ -29,6 +29,9 @@ a{
 .bg_aquamire_semi_transparent{
   background-color: #16928e26;
 }
+.bg_cards{
+  background-color: #191c1e;
+}
 .clr_dark_aquamarine{
   color: #028384; /*button*/ 
 } 
@@ -253,6 +256,64 @@ a{
 }
 /* /section ABOUT */
 /* ////////////////////////////////////////////////////////////////////////////// */
+/* section SERVICES */
+#section_services{
+  width: 100vw;
+  height: 95vh;
+}
+#section_services > div{
+  height: 40%;
+}
+/* SERVICES INCIPIT */
+#services_incipit{
+  padding-top: 75px;
+  height: 100%;
+  width: 70%;
+}
+#services_incipit h2{
+  padding: 20px 0;
+}
+#services_button_incipit{
+  height: 100%;
+  padding-top: 175px;
+}
+/* SERVICES CARD */
+.services_card_container{
+  position: relative;
+  width: calc(100%/3);
+  padding: 30px 35px;
+  border-radius: 10px;
+}
+#section_services > div:nth-child(2) > div:nth-child(2){
+  margin: 0 20px;
+}
+.services_card_container > a > i{
+  position: absolute;
+  top: 40px;
+  right: 35px;
+  font-size: 20px;
+  color: #16928ebb;
+}
+.services_card_container > a > i:hover{
+  color: white;
+}
+#section_services .icona {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+#section_services .icona > i{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+.services_card_container h3, .services_card_container p{
+  margin: 15px 0 20px 0;
+}
+/* /section SERVICES */
+/* ////////////////////////////////////////////////////////////////////////////// */
 /* section FORM */
 #section_form{
   width: 100vw;
@@ -302,7 +363,7 @@ a{
   display: block;
   margin-bottom: 23px;
 }
-#form_info i{
+.icona i{
   width: 16px;
   height: 16px;
   position: absolute;
@@ -310,13 +371,13 @@ a{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#form_info .icona{
+.icona{
   display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    background-color: #16928e26;
-    border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-color: #16928e26;
+  border-radius: 50%;
 }
 #form_info li{
   margin: 10px 0;
