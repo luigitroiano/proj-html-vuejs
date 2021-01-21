@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 li{
   list-style: none;
@@ -12,6 +12,9 @@ li{
 a{
   text-decoration: none;
   color: inherit;
+}
+h1, h2{
+  font-family: 'Poppins', sans-serif;
 }
 /* //////////////////////////////////////////// */
 /* colors */
@@ -78,8 +81,14 @@ a{
 .fw_500{
   font-weight: 500;
 }
+.fw_700{
+  font-weight: 700;
+}
 .mg_l_25{
   margin-left: 20px;
+}
+.mg_top_30{
+  margin-top: 30px;
 }
 .pd_l_2{
   padding-left: 2px;
@@ -180,6 +189,7 @@ a{
   font-size: 50px;
   font-weight: 900;
   margin: 10px 0 25px 0;
+  line-height: 1.2;
 }
 #main_jumbo p{
   margin-bottom: 25px;
